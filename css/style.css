@@ -12,7 +12,8 @@
 	--bg-color: #fff;
 	--text-color: #221314;
 	--second-color: #5a7184;
-	--main-color: #6e54fa;
+	--main-color: linear-gradient(to right, #edb160 1% , 30% , darkblue 99%);
+	/* --main-color: #6e54fa; */
 	--big-font: 6rem;
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
@@ -35,10 +36,15 @@ header {
 	background: transparent;
 	padding: 30px 18%;
 	transition: ease .40s;
+
+	/*  */
+	img{
+		width: 100px;
+	}
 }
 
 .customased_header {
-	background-color: darkblue;
+	background: var(--main-color)
 }
 
 .costum_space {
@@ -725,7 +731,7 @@ header.sticky {
 	position: absolute;
 	bottom: 10px;
 	right: 5px;
-	color: #1067cc;
+	color: transparent;
 	transition: all .24s ease;
 
 }
