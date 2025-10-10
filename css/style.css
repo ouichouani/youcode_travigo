@@ -791,4 +791,7 @@ header.sticky {
 	.buttom_page>div img{
 		display: none;
 	}
+	.costum_space{
+		height: 50px;
+	}
 }
