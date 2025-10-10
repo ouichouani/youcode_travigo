@@ -786,6 +786,10 @@ header.sticky {
 	.contact_form button {
 		bottom: -10px;
 	}
+
+		.costum_space{
+		height: 50px;
+	}
 }
 @media(max-width : 660px){
 	.buttom_page>div img{
