@@ -592,10 +592,10 @@ header.sticky {
 		}
 	}
 
-	.buttom_page>div img{
-		display: none;
-	}
+
 }
+
+
 
 
 
@@ -647,14 +647,15 @@ header.sticky {
 .contact_form {
 	padding: 10px 5px;
 	height: 300px;
+	/* background-color: #db4444; */
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* flex: 1; */
-	width: 100%;
+	flex: 1;
+	/* width: 100%; */
 	gap: 15px;
 	position: relative;
-	overflow : hidden;
 
 }
 
@@ -688,13 +689,13 @@ header.sticky {
 
 .contact_form button {
 	
-	color: #1068ccc6;
-	background-color: transparent;
-	border: none;
 	width: fit-content;
+	background-color: transparent;
+	color: #1068ccc6;
+	border: none;
 	font-weight: 500;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px ;
 	right: 10px;
 	font-size: 17px;
 
@@ -776,4 +777,18 @@ header.sticky {
 
 .on_scroll_menu_icon_style{
 	background-color: red;
+}
+
+@media(max-width : 400px){
+	.contact_form label{
+		flex-direction: column;
+	}
+	.contact_form button {
+		bottom: -10px;
+	}
+}
+@media(max-width : 660px){
+	.buttom_page>div img{
+		display: none;
+	}
 }
