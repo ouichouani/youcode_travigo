@@ -53,9 +53,9 @@ header {
 }
 
 .logo {
-	font-size: 35px;
+	/* font-size: 35px;
 	font-weight: 600;
-	letter-spacing: 1px;
+	letter-spacing: 1px; */
 	color: var(--bg-color);
 	user-select: none;
 }
@@ -581,6 +581,20 @@ header.sticky {
 		height: 85vh;
 		transition: .2s;
 	}
+
+	/*  */
+
+	header{
+		height: 80px;
+		img{
+			height: 74px;
+			width: 74px;
+		}
+	}
+
+	.buttom_page>div img{
+		display: none;
+	}
 }
 
 
@@ -596,6 +610,7 @@ header.sticky {
 	background-image: url(../img/contact_us_img.png);
 	background-size: cover;
 	height: 250px;
+	width: 100%;
 	color: white;
 
 	display: flex;
@@ -617,14 +632,15 @@ header.sticky {
 	padding: 10px;
 }
 
-.buttom_page>div {
+.buttom_page > div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .buttom_page>div img {
-	display: flex;
+	/* display: flex; */
 	width: 300px;
 }
 
@@ -687,10 +703,12 @@ header.sticky {
 .contact_form button:hover {
 	color: #1067cc;
 	right: 15px;
-	/* background-color: #6e54fa; */
 }
 
 /* home style */
+
+
+
 
 .home_cards {
 	display: flex;
